@@ -13,4 +13,4 @@ One of the current limitations of the "Vector-calculator" is its handling of vec
 Another issue pertains to the calculation of the angle between vectors A and B, represented as AB_angle. The current code calculates this angle inaccurately. To resolve this, a more precise approach is needed..
 
 help me fix it:
-[VectorCalculator.html](VectorCalculator.htm)
+[VectorCalculator.html](VectorCalculator.html)
