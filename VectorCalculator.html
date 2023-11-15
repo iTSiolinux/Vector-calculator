@@ -148,7 +148,8 @@
                 // const AB_length = Math.sqrt(AlValue**2 + BlValue**2 + 2 * AlValue * BlValue * Math.cos(dtr(A0Value - B0Value)));
                 const AB_length = Math.sqrt( ( ( Ax + Bx ) ** 2 ) + ( ( Ay + By) ** 2 ) )
                 // const AB_angle = A0Value + Math.acos((AlValue * Math.cos(dtr(B0Value - A0Value) + BlValue)) / AB_length) * (180 / Math.PI);
-                const AB_angle = Math.atan( ( Math.abs( (Ay + By) ) ) / ( Math.abs( ( Ax + Bx ) ) ) )
+                const pre_AB_angle = Math.atan( ( (Ay) + (By) ) / ( (Ax) + (Bx) ) ) *  ( 180 / Math.PI)
+                const AB_angle = 180 - Math.abs(pre_AB_angle)
                 
                 
                 const listItem = document.createElement("li");
